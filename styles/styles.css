@@ -1,0 +1,73 @@
+.buscador {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+.user-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#mobileSearchForm {
+    position: absolute;
+    top: 56px; /* altura de navbar */
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+.sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: white;
+    overflow-y: auto;
+    padding-top: 12px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 4px 8px;
+}
+
+.sidebar-item:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar-item.active {
+    background-color: #e5e5e5;
+    font-weight: 500;
+}
+
+.sidebar-item i {
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+
+.sidebar-divider {
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 24px;
+}
+
+.sidebar-title {
+    padding: 8px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #606060;
+    text-transform: uppercase;
+}
+.channel-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
