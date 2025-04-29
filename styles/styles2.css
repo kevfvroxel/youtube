@@ -1,106 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
-  }
-  
-  img {
-    object-fit: cover;
-  }
-  
-  .buscador {
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .bg-secondary {
-    background-color: #2d2d2d !important;
-  }
-  
-  h4, h5 {
-    color: #fff;
-  }
-  
-  .btn-outline-light {
-    border-color: #555;
-    color: #ccc;
-  }
-  
-  .btn-outline-light:hover {
-    background-color: #444;
-    color: #fff;
-  }
-  
-  input.form-control {
-    background-color: #121212;
-    border: 1px solid #333;
-    color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .ratio {
-      margin-bottom: 1rem;
-    }
-  
-    .btn-outline-light {
-      padding: 0.25rem 0.5rem;
-      font-size: 0.85rem;
-    }
-  
-    .d-flex.justify-content-between {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
 
-  .sidebar {
-    position: fixed;
-    top: 56px;
-    left: 0;
-    bottom: 0;
-    width: 240px;
-    background-color: white;
-    overflow-y: auto;
-    padding-top: 12px;
-    border-right: 1px solid #e5e5e5;
+.sidebar {
+    background-color: #181818;
+    border-right: 1px solid #303030;
 }
 
 .sidebar-item {
-    display: flex;
-    align-items: center;
-    padding: 8px 24px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin: 4px 8px;
+    color: #f1f1f1;
+    transition: background-color 0.2s ease;
 }
 
 .sidebar-item:hover {
-    background-color: #f2f2f2;
+    background-color: #303030;
 }
 
 .sidebar-item.active {
-    background-color: #e5e5e5;
-    font-weight: 500;
-}
-
-.sidebar-item i {
-    margin-right: 16px;
-    font-size: 1.2rem;
+    background-color: #383838;
 }
 
 .sidebar-divider {
-    border-top: 1px solid #e5e5e5;
-    margin: 12px 24px;
+    border-top: 1px solid #303030;
 }
 
 .sidebar-title {
-    padding: 8px 24px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #606060;
-    text-transform: uppercase;
+    color: #aaa;
 }
-.channel-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
+
+.bg-secondary {
+    background-color: #272727 !important;
+}
+
+.btn-outline-light {
+    border-color: #3e3e3e;
+    color: #ddd;
+    background-color: transparent;
+}
+
+.btn-outline-light:hover {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+input.form-control {
+    background-color: #121212;
+    border: 1px solid #333;
+    color: white;
+}
+
+.ratio video {
+    border: 1px solid #333;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
