@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     
 
     
@@ -42,7 +44,7 @@
             </button>
           </form>
       
-          <!-- ICONOS DERECHA -->
+          <!-- ICONOS IZQUIERDA -->
           <div class="d-flex align-items-center gap-2">
             <!-- Lupa (solo visible en móvil) -->
             <button class="btn btn-outline-secondary rounded-circle d-lg-none" id="mobileSearchToggle">
@@ -73,7 +75,7 @@
       </nav>
       
       <!-- OFFCANVAS DERECHO (menú hamburguesa) -->
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasMenu">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title">Menú</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
@@ -112,15 +114,15 @@
             <div class="sidebar-divider"></div>
             <div class="sidebar-title">Suscripciones</div>
             <div class="sidebar-item">
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Canal" class="channel-avatar">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Canal" class="channel-avatar">
                 <span>TechChannel</span>
             </div>
             <div class="sidebar-item">
-                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Canal" class="channel-avatar">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Canal" class="channel-avatar">
                 <span>CookingTime</span>
             </div>
             <div class="sidebar-item">
-                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Canal" class="channel-avatar">
+                <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Canal" class="channel-avatar">
                 <span>GamingPro</span>
             </div>
             </div>
@@ -135,7 +137,7 @@
         <div class="row">
 
             <!-- Barra lateral de categorías -->
-            <div class=" col-sx-none col-2 bg-light p-4">
+            <div class=" cajexs col-sx-none col-2 bg-light p-4">
                 <!-- Menú vacío por ahora -->
                 <div class="sidebar-item active">
                     <i class="bi bi-house-door"></i>
@@ -169,17 +171,17 @@
                 <div class="sidebar-divider"></div>
                 <div class="sidebar-title">Suscripciones</div>
                 <div class="sidebar-item">
-                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Canal" class="channel-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Canal" class="channel-avatar">
                     <span>TechChannel</span>
                 </div>
                 <div class="sidebar-item">
-                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Canal" class="channel-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Canal" class="channel-avatar">
                     <span>CookingTime</span>
                 </div>
                 <div class="sidebar-item">
-                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Canal" class="channel-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Canal" class="channel-avatar">
                     <span>GamingPro</span>
-            </div>
+                </div>
             </div>
         
 
@@ -189,90 +191,129 @@
                 <!-- Videos -->
                 <div class="row">
                     <!-- Video 1 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12" >
+                    <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
                         <div class="video-hover ">
-                        <div class="card text-wrap mt-4 mb-4" >
-                            
-                            <video src="video/video1.mp4" mute preload="metadata" ></video>
-                            <button type="button" onclick="window.location.href='vides.html'">>
-                            <div class="card-body">
-                                <h5 class="card-title">le pido MATRIMONIO a una Italiana</h5>
-                                <p class="card-text">Gabriel Murillo 
-                                    115 K visualizaciones 
-                                    hace 3 semanas
-                                </p>
-                            </div>
-                        </button>
+                            <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video>
+                                <div class="video-info">
+                                    <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/15.jpg" alt="foto de la cuenta"> 
+                                    <div class="video-details">
+                                        <h5 class="video-title card-title">le pido MATRIMONIO a una Italiana</h5>
+                                        <p class="channel-name card-text">Gabriel Murillo </p>
+                                        <p class="video-meta"> 115 K visualizaciones hace • 3 semanas</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     
-
-
-                    <!-- Video 2 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card text-wrap mt-4 mb-4">
-                            <img src="images/imagen 2.jpg" class="card-img-top" alt="video 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 2</h5>
-                                <p class="card-text">Descripción breve del video 2.</p>
+                    
+                        <!-- Video 2 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/1.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/14.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">Guía de estilo</h5>
+                                            <p class="channel-name card-text">Estudio Shonos </p>
+                                            <p class="video-meta"> 500 K visualizaciones hace • 1 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Video 3 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card text-wrap mt-4 mb-4">
-                            <img src="images/imagen 3.jpg" class="card-img-top" alt="video 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 3</h5>
-                                <p class="card-text">Descripción breve del video 3.</p>
+                        <!-- Video 3 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/2.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/13.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">La HISTORIA de los VIDEOJUEGOS</h5>
+                                            <p class="channel-name card-text">Rosa Martínez </p>
+                                            <p class="video-meta"> 100 K visualizaciones hace • 4 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- video 4 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card text-wrap mt-4 mb-4">
-                            <img src="images/imagen 3.jpg" class="card-img-top" alt="video 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 3</h5>
-                                <p class="card-text">Descripción breve del video 3.</p>
+                        <!-- video 4 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/3.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/12.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">Nos encargamos de tu salud</h5>
+                                            <p class="channel-name card-text">Clínica Nutrición </p>
+                                            <p class="video-meta"> 115 K visualizaciones hace • 1 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <br>
-                    <!-- video 5 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card text-wrap mt-4 mb-4">
-                            <img src="images/imagen 3.jpg" class="card-img-top" alt="video 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 3</h5>
-                                <p class="card-text">Descripción breve del video 3.</p>
+                        <!-- video 5 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/4.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/8.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">Una charla de SALUD MENTAL</h5>
+                                            <p class="channel-name card-text">Tu Espacio Seguro </p>
+                                            <p class="video-meta"> 950 K visualizaciones hace • 2 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 6 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/5.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/19.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">Aprende a diseñar en un solo paso</h5>
+                                            <p class="channel-name card-text">Tu profesor preferido </p>
+                                            <p class="video-meta"> 115 K visualizaciones hace • 3 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 7 -->
+                        <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                            <div class="video-hover ">
+                                <div class="video-card text-wrap mt-4 mb-4"  onclick="window.location.href='vides.html'" >
+                                <!-- <video class="videos preview-video" src="video/video1.mp4" mute preload="metadata" loop ></video> -->
+                                 <img  class="videos preview-video" src="images/6.jpg"  mute preload="metadata" loop alt="">
+                                    <div class="video-info">
+                                        <img class="channel-avatar" src="https://randomuser.me/api/portraits/men/18.jpg" alt="foto de la cuenta"> 
+                                        <div class="video-details">
+                                            <h5 class="video-title card-title">Clase de diseño de interires</h5>
+                                            <p class="channel-name card-text">Catalina Santana </p>
+                                            <p class="video-meta"> 115 K visualizaciones hace • 3 semanas</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- video 6 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card text-wrap mt-4 mb-4">
-                            <img src="images/imagen 3.jpg" class="card-img-top" alt="video 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 3</h5>
-                                <p class="card-text">Descripción breve del video 3.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- video 7 -->
-                    <div class="col-md-4 col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <img src="images/imagen 3.jpg" class="card-img-top" alt="video 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Video 3</h5>
-                                <p class="card-text">Descripción breve del video 3.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <!-- video 8 -->
+                        <!-- video 8 -->
                 </div>
 
 
@@ -293,17 +334,19 @@
         });
       </script>
     <script>
-            const video = document.querySelector(".video-hover video");
-        
-            video.addEventListener("mouseenter", () => {
-              video.play();
-            });
-        
-            video.addEventListener("mouseleave", () => {
-              video.pause();
-              video.currentTime = 0; // Opcional: vuelve al inicio
-            });
+        document.querySelectorAll('.preview-video').forEach(video => {
+        video.addEventListener('mouseenter', () => {
+            video.play();
+        });
+    
+        video.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0; // Reinicia el video
+        });
+        });
     </script>
+  
+  
       
       
       
